@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b47jql48ydakq"]
+
+[ext_resource type="Script" uid="uid://ucy02pmvf3jo" path="res://bot.gd" id="1_4mwah"]
+[ext_resource type="PackedScene" uid="uid://dvvilbhxc4dof" path="res://Resources/Bowser/bowser.glb" id="2_4mwah"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mo174"]
+size = Vector3(2.7440796, 2.3175354, 3.8883362)
+
+[node name="Bot" type="CharacterBody3D" unique_id=635008659]
+script = ExtResource("1_4mwah")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1151425541]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.055267334, 1.1388912, -0.36203122)
+shape = SubResource("BoxShape3D_mo174")
+
+[node name="bowser" parent="." unique_id=1027749736 instance=ExtResource("2_4mwah")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.08614528, 0.00427413, -0.2686514)

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b1v7vlhdft6ks"]
+
+[ext_resource type="Script" uid="uid://ucy02pmvf3jo" path="res://bot.gd" id="1_fyg8x"]
+[ext_resource type="PackedScene" uid="uid://dkmyf0r3q7w7w" path="res://Resources/Donkykong/DonkyKong.glb" id="2_fyg8x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mo174"]
+size = Vector3(1.7233734, 1.6374054, 2.9067154)
+
+[node name="Bot" type="CharacterBody3D" unique_id=635008659]
+script = ExtResource("1_fyg8x")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1151425541]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013221741, 0.7988262, -0.21956372)
+shape = SubResource("BoxShape3D_mo174")
+
+[node name="DonkyKong" parent="." unique_id=735413370 instance=ExtResource("2_fyg8x")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.0014834404, 0.6708793, -0.30931357)

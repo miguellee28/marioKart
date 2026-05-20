@@ -3,6 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://bcex0igvmommp" path="res://Resources/Mapa/mapa.glb" id="1_k80mq"]
 [ext_resource type="PackedScene" uid="uid://beahmsjofhwyo" path="res://Resources/Mario/Mario.glb" id="2_wcfoy"]
 [ext_resource type="Script" uid="uid://da2rgx48715io" path="res://Resources/Mario/mario.gd" id="3_utnr2"]
+[ext_resource type="PackedScene" uid="uid://b47jql48ydakq" path="res://Bowser.tscn" id="4_cy2u0"]
+[ext_resource type="PackedScene" uid="uid://b1v7vlhdft6ks" path="res://DonkyKong.tscn" id="5_rtnxs"]
+[ext_resource type="PackedScene" uid="uid://bptoh7nhtxxqu" path="res://Ludgi.tscn" id="6_43d7j"]
+[ext_resource type="PackedScene" uid="uid://dd58kkll3vh4m" path="res://Peach.tscn" id="7_njv28"]
+[ext_resource type="PackedScene" uid="uid://da3gak7ecpmgh" path="res://Waludgi.tscn" id="8_r1xdt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_wcfoy"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -23,7 +28,14 @@ data = PackedVector3Array(21.060799, 7.0074, 113.0914, 23.414999, 7.0074, 113.09
 size = Vector3(790.9296, 749.99756, 2.2546387)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8jcc0"]
-size = Vector3(2.8445435, 1.8979492, 3.0234375)
+size = Vector3(1.6551056, 1.5754395, 3.0234375)
+
+[sub_resource type="Curve3D" id="Curve3D_8jcc0"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -52.02418, 0, -6.750646, 0, 0, 0, 0, 0, 0, -51.84149, 0, -43.76805, 0, 0, 0, 0, 0, 0, -48.209206, 0, -52.433567, 0, 0, 0, 0, 0, 0, -40.934036, 0, -57.708515, 0, 0, 0, 0, 0, 0, -32.04671, 0, -59.85927, 0, 0, 0, 0, 0, 0, -24.114891, 0, -58.28457, 0, 0, 0, 0, 0, 0, -16.474678, 0, -52.04409, 0, 0, 0, 0, 0, 0, -10.847382, 0, -43.034134, 0, 0, 0, 0, 0, 0, -3.3498793, 0, -30.645092, 0, 0, 0, 0, 0, 0, 7.1238947, 0, -27.947302, 0, 0, 0, 0, 0, 0, 18.629173, 0, -28.344036, 0, 0, 0, 0, 0, 0, 27.041044, 0, -35.066093, 0, 0, 0, 0, 0, 0, 30.37361, 0, -45.539864, 0, 0, 0, 0, 0, 0, 37.439636, 0, -53.719086, 0, 0, 0, 0, 0, 0, 45.05693, 0, -57.52773, 0, 0, 0, 0, 0, 0, 56.006783, 0, -56.57557, 0, 0, 0, 0, 0, 0, 69.56375, 0, -48.553722, 0, 0, 0, 0, 0, 0, 73.769135, 0, -41.88859, 0, 0, 0, 0, 0, 0, 72.390175, 0, -26.154713, 0, 0, 0, 0, 0, 0, 62.163548, 0, -14.429822, 0, 0, 0, 0, 0, 0, 6.38657, 0, -3.702609, 0, 0, 0, 0, 0, 0, -7.607151, 0, 1.3246899, 0, 0, 0, 0, 0, 0, -8.330734, 0, 9.17273, 0, 0, 0, 0, 0, 0, -1.4342117, 0, 14.362486, 0, 0, 0, 0, 0, 0, 5.706999, 0, 17.298317, 0, 0, 0, 0, 0, 0, 21.973083, 0, 18.488518, 0, 0, 0, 0, 0, 0, 41.198605, 0, 18.13052, 0, 0, 0, 0, 0, 0, 53.418003, 0, 18.447906, 0, 0, 0, 0, 0, 0, 63.14325, 0, 22.496637, 0, 0, 0, 0, 0, 0, 68.93556, 0, 28.05091, 0, 0, 0, 0, 0, 0, 70.76054, 0, 34.39865, 0, 0, 0, 0, 0, 0, 66.980865, 0, 46.29366, 0, 0, 0, 0, 0, 0, 62.85483, 0, 51.92728, 0, 0, 0, 0, 0, 0, 50.884148, 0, 55.423298, 0, 0, 0, 0, 0, 0, 32.951782, 0, 55.264603, 0, 0, 0, 0, 0, 0, 23.482494, 0, 48.226574, 0, 0, 0, 0, 0, 0, 19.096312, 0, 41.48181, 0, 0, 0, 0, 0, 0, 7.9877663, 0, 40.37096, 0, 0, 0, 0, 0, 0, 0.9259033, 0, 42.195934, 0, 0, 0, 0, 0, 0, -11.931805, 0, 53.83883, 0, 0, 0, 0, 0, 0, -27.1878, 0, 59.789455, 0, 0, 0, 0, 0, 0, -37.234245, 0, 59.467396, 0, 0, 0, 0, 0, 0, -44.93088, 0, 52.72292, 0, 0, 0, 0, 0, 0, -51.08205, 0, 35.75859, 0, 0, 0, 0, 0, 0, -51.988213, 0, 20.868843),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 45
 
 [node name="Node3D" type="Node3D" unique_id=933169795]
 
@@ -37,7 +49,10 @@ shadow_enabled = true
 [node name="mapa" parent="." unique_id=1270637303 instance=ExtResource("1_k80mq")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.457, -6.988, 0)
 
-[node name="Skeleton3D" parent="mapa/Armature" parent_id_path=PackedInt32Array(1270637303, 1409894279) index="0" unique_id=1943057292]
+[node name="Armature" parent="mapa" index="0" unique_id=1027542566]
+transform = Transform3D(0.0070074, 0, 0, 0, -3.0630318e-10, -0.0070074, 0, 0.0070074, -3.0630318e-10, 0, 0, 0)
+
+[node name="Skeleton3D" parent="mapa/Armature" index="0" unique_id=1934692428]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.487183)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="mapa/Armature/Skeleton3D" index="0" unique_id=914018376]
@@ -46,24 +61,70 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.487183)
 transform = Transform3D(142, 0, 0, 0, 1.693333e-06, 142, 0, -142, 1.693333e-06, 0, 0, -6.826416)
 shape = SubResource("ConcavePolygonShape3D_wcfoy")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="mapa/Armature" parent_id_path=PackedInt32Array(1270637303, 1409894279) index="1" unique_id=1166857971]
+[node name="StaticBody3D" type="StaticBody3D" parent="mapa/Armature" index="1" unique_id=1166857971]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="mapa/Armature/StaticBody3D" unique_id=337721955]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 3728.097, -935.1017, -901.40356)
 shape = SubResource("BoxShape3D_utnr2")
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1808707343]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.45974, -2.6834438, 0)
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1808707343 groups=["player"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.50686, -2.6834438, 31.449982)
 script = ExtResource("3_utnr2")
 
-[node name="Mario" parent="CharacterBody3D" unique_id=1248859955 instance=ExtResource("2_wcfoy")]
+[node name="Mario" parent="Player" unique_id=1248859955 instance=ExtResource("2_wcfoy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.07885361, -0.547179, -0.79542136)
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Mario" unique_id=536708532]
+[node name="Camera3D" type="Camera3D" parent="Player/Mario" unique_id=536708532]
 transform = Transform3D(-0.999074, 2.795197e-09, 0.04302643, 0.011073667, 0.96631324, 0.25713056, -0.041577008, 0.2573689, -0.9654184, 0.15709686, 1.8959063, -3.347803)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1096261735]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.116005, 0.1926949, -1.1807294)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1096261735]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.098083496, 0.03144002, -1.1807294)
 shape = SubResource("BoxShape3D_8jcc0")
+
+[node name="Path3D" type="Path3D" parent="." unique_id=87713289]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1320152, 0)
+curve = SubResource("Curve3D_8jcc0")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=1314500035]
+transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.83665, 0, -6.750646)
+
+[node name="PathFollow3D2" type="PathFollow3D" parent="Path3D" unique_id=760636173]
+transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -53.002213, 0, -6.750646)
+
+[node name="PathFollow3D3" type="PathFollow3D" parent="Path3D" unique_id=59886114]
+transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -53.228027, 0, -6.750646)
+
+[node name="PathFollow3D4" type="PathFollow3D" parent="Path3D" unique_id=1169802932]
+transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.73008, 0, -6.750646)
+
+[node name="PathFollow3D5" type="PathFollow3D" parent="Path3D" unique_id=582929845]
+transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.945393, 0, -6.750646)
+
+[node name="Bot" parent="." unique_id=635008659 node_paths=PackedStringArray("target_path_follow") groups=["bot"] instance=ExtResource("4_cy2u0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.093582, -3.4193223, 23.47839)
+acceleration = 4.0
+target_path_follow = NodePath("../Path3D/PathFollow3D")
+
+[node name="Bot2" parent="." unique_id=1173725021 node_paths=PackedStringArray("target_path_follow") groups=["bot"] instance=ExtResource("5_rtnxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.525177, -3.4348145, 0.8917341)
+max_speed = 20.0
+acceleration = 6.0
+target_path_follow = NodePath("../Path3D/PathFollow3D5")
+
+[node name="Bot3" parent="." unique_id=667041947 node_paths=PackedStringArray("target_path_follow") groups=["bot"] instance=ExtResource("6_43d7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.0342, -3.4348145, 6.5864444)
+max_speed = 18.0
+acceleration = 6.0
+target_path_follow = NodePath("../Path3D/PathFollow3D2")
+
+[node name="Bot4" parent="." unique_id=996865068 node_paths=PackedStringArray("target_path_follow") groups=["bot"] instance=ExtResource("7_njv28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.666214, -3.417776, 14.369574)
+max_speed = 18.0
+target_path_follow = NodePath("../Path3D/PathFollow3D4")
+
+[node name="Bot5" parent="." unique_id=1767142551 node_paths=PackedStringArray("target_path_follow") groups=["bot"] instance=ExtResource("8_r1xdt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.400677, -3.4544106, -6.506996)
+acceleration = 7.0
+target_path_follow = NodePath("../Path3D/PathFollow3D3")
 
 [editable path="mapa"]

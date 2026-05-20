@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://da3gak7ecpmgh"]
+
+[ext_resource type="Script" uid="uid://ucy02pmvf3jo" path="res://bot.gd" id="1_j7bcr"]
+[ext_resource type="PackedScene" uid="uid://btsyb7uhs2c1f" path="res://Resources/waludgi/waludgi.glb" id="2_j7bcr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mo174"]
+size = Vector3(1.637847, 2.0863533, 3.1626253)
+
+[node name="Bot" type="CharacterBody3D" unique_id=635008659]
+script = ExtResource("1_j7bcr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1151425541]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008142948, 1.04813, -0.28100657)
+shape = SubResource("BoxShape3D_mo174")
+
+[node name="waludgi" parent="." unique_id=789407338 instance=ExtResource("2_j7bcr")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -0.0005466938, 0)

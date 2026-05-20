@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dd58kkll3vh4m"]
+
+[ext_resource type="Script" uid="uid://ucy02pmvf3jo" path="res://bot.gd" id="1_lohwk"]
+[ext_resource type="PackedScene" uid="uid://duxw3pvd3oos7" path="res://Resources/Peach/peach.glb" id="2_lohwk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mo174"]
+size = Vector3(2.1119347, 1.6374054, 3.5792122)
+
+[node name="Bot" type="CharacterBody3D" unique_id=635008659]
+script = ExtResource("1_lohwk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1151425541]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.001001358, 0.7988262, 0.116684675)
+shape = SubResource("BoxShape3D_mo174")
+
+[node name="peach" parent="." unique_id=118641595 instance=ExtResource("2_lohwk")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0.06)
