@@ -86,19 +86,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1320152, 0)
 curve = SubResource("Curve3D_8jcc0")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=1314500035]
-transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.83665, 0, -6.750646)
+transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.02418, 0, -6.750646)
 
 [node name="PathFollow3D2" type="PathFollow3D" parent="Path3D" unique_id=760636173]
-transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -53.002213, 0, -6.750646)
+transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.02418, 0, -6.750646)
 
 [node name="PathFollow3D3" type="PathFollow3D" parent="Path3D" unique_id=59886114]
-transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -53.228027, 0, -6.750646)
+transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.02418, 0, -6.750646)
 
 [node name="PathFollow3D4" type="PathFollow3D" parent="Path3D" unique_id=1169802932]
-transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.73008, 0, -6.750646)
+transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.02418, 0, -6.750646)
 
 [node name="PathFollow3D5" type="PathFollow3D" parent="Path3D" unique_id=582929845]
-transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.945393, 0, -6.750646)
+transform = Transform3D(0.99998784, 0, -0.004935177, 0, 1, 0, 0.004935177, 0, 0.99998784, -52.02418, 0, -6.750646)
 
 [node name="Bot" parent="." unique_id=635008659 node_paths=PackedStringArray("target_path_follow") groups=["bot"] instance=ExtResource("4_cy2u0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.093582, -3.4193223, 23.47839)
