@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://8kopuelc1mk3"]
+
+[ext_resource type="Script" uid="uid://choa5tnuqityd" path="res://MenuPrincipal.gd" id="1_0oe1n"]
+[ext_resource type="Texture2D" uid="uid://d0fh2b10c1quj" path="res://Imagenes/mariokart.jpg" id="2_ba235"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5dpk2"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pi62y"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ectly"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="MenuPrincipal" type="Control" unique_id=977126203]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0oe1n")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=1355845227]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ba235")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1729857202]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -302.0
+offset_right = 126.0
+offset_bottom = -87.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Comenzar" type="Button" parent="VBoxContainer" unique_id=21768651]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_5dpk2")
+text = "JUGAR"
+
+[node name="Opciones" type="Button" parent="VBoxContainer" unique_id=1257200568]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_pi62y")
+text = "OPCIONES"
+
+[node name="Salir" type="Button" parent="VBoxContainer" unique_id=1799751912]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_ectly")
+text = "Salir
+"
+
+[connection signal="pressed" from="VBoxContainer/Comenzar" to="." method="_on_comenzar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
