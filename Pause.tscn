@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://ym4thaxju6mb"]
+
+[ext_resource type="Script" uid="uid://dg5nhdvvycmnp" path="res://Pause.gd" id="1_sn2qd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sn2qd"]
+bg_color = Color(0.6, 0.6, 0.6, 0.7529412)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_alh12"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lg454"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2jkrm"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_km1i3"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="PauseMenu" type="Control" unique_id=966128359]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sn2qd")
+
+[node name="Label" type="Label" parent="." unique_id=1355324118]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -272.0
+offset_top = -161.0
+offset_right = 291.0
+offset_bottom = -65.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn2qd")
+text = "MENU DE PAUSA"
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=136625154]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -149.0
+offset_top = -449.0
+offset_right = 149.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=2123367801]
+layout_mode = 2
+
+[node name="Continue" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1440671403]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_alh12")
+text = "Continuar"
+
+[node name="Restart" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1881770430]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_lg454")
+text = "REINICIAR"
+
+[node name="Options" type="Button" parent="CenterContainer/VBoxContainer" unique_id=2137609627]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_2jkrm")
+text = "OPCIONES"
+
+[node name="Exit" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1360793620]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_km1i3")
+text = "SALIR AL MENU"
